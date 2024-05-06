@@ -6,7 +6,11 @@
     import { saannot } from '../Säännöt.js'
   $deckIdStore;
   $vedetytKortitStore; 
-
+// Täällä suurin osa minun ChatGPT käytöstä tapahtui, jonka takia arvoioin käyttöni niin suureksi.
+// Kuten huomaat, storejen ja API:n välillä oleva kommunikointi on skidisti monimutkaista, johon myönnän käyttäneeni tekoälyä.
+// Näin jälkeenpäin katsottuna, kuten aiemmin mainittu, En olisi todennäköisesti tarvinnut tekälyä paljoa.
+// Mutta kyllä sanoisin että noin puolet näiden muotoilusta + aiheiden opettelu tekoälyllä koska ei millään pahalla, materiaalit ei olleet mielestäni hyvät, tai olen tyhmä.
+// En osaa sanoa mitä mieltä olet siitä että opettelin aiheet sen kautta, mutta ihan reilua jos se on väärin koska tekoäly ei opeta samalla tavalla kuin koulu
   let korttiSaannot;
   $: korttiSaannot = saannot($effectiveRangaistus.toString());
 
@@ -50,7 +54,7 @@
         </div>
     {:else}
         <div class="card" on:click={NostaKortti}>
-            <p>No card drawn yet. Click to draw a card.</p>
+            <p>Paina nostaaksesi kortin.</p>
         </div>
     {/if}
 

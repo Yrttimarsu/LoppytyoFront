@@ -6,7 +6,9 @@
   import { saannot } from './Säännöt.js'
   import MenneetKortit from './lib/MenneetKortit.svelte';
 
-  
+  // App.svelte on minun tekemä, eihän täällä mitään liian monimutkaista ole.
+  // Mutta store rakenteissa muistan kysyneeni ChatGPT:ltä apua, koska en osannut niitä vielä silloin kunnolla käyttää.
+  //Seuraavaksi mene Kortti.svelteen
   let rangaistusValue;
   let kerroinValue;
 
@@ -39,6 +41,8 @@
 </script>
 
 <main>
+
+
   {#if !pelialkaa}
     <h1>Valitse rangaistus ja kerroin</h1>
 
